@@ -1,0 +1,169 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.slider{
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+.slider img{
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    left:0px;
+}
+.banners{
+    width: 100%;
+    height: 800px;
+    margin: 0px;
+    
+}
+.hide{
+	visibility: hidden;
+}
+.banners div{
+    width: 30%;
+    height: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.356);
+    display: inline-block;
+    margin: 4% 1.30%;
+    overflow: hidden;
+    transition: 0.5s;
+    background-size:105% 105%;
+    background-repeat: no-repeat;
+    transition: 0.25s;
+    position: relative;
+}
+.banners div .bannnerbackground{
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    opacity: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+} 
+.banners div .bannnerbackground:hover{
+    opacity: 0.4;
+}
+.banners div .promo{
+    width: 100%;
+    height: 100%;
+    margin: 0%;
+    border: none;
+}
+
+.banners div .promo h3{
+    color: black;
+    font-size: 2em;
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
+    transition: 0.25s;
+    z-index: 33;
+}
+.banners div .promo p{
+    color: rgb(87, 86, 86);
+    position: absolute;
+    top: 5em;
+    left: 2em;
+    transition: 0.25s;
+    z-index: 33;
+}
+
+.ban1{
+    background-image: url("../images//banner-01.jpg");
+}
+.ban2{
+    background-image: url("../images//banner-02.jpg");
+}
+.ban3{
+    background-image: url("../images//banner-09.jpg");
+}
+.ban4{
+    background-image: url("../images//banner-06.jpg");
+}
+.ban5{
+    background-image: url("../images//banner-07.jpg");
+}
+.ban6{
+    background-image: url("../images/banner-03.jpg");
+}
+.banners div:hover{
+    background-size: 100% 100%;
+}
+
+
+@media only screen and (max-width:1000px) {
+    .slider{
+        height: 350px;
+    }
+    .content{
+        width: 100%;
+        height: 1200px;
+        margin: 0px;
+        background-color: yellow;
+    }
+    .content div{
+        width: 65%;
+        height: 28%;
+        background-color: black;
+        display: block;
+        margin: 50px auto ;
+    }
+    .banners{
+        width: 100%;
+        height: 1850px;
+    }
+    .banners div{
+        width: 60%;
+        height: 15%;
+        display:block;
+        margin: 4% auto;
+    }
+}
+@media only screen and (max-width:470px) {
+    .slider{
+        height: 220px;
+    }
+    .content{
+        width: 100%;
+        height: 1000px;
+        margin: 0px;
+        background-color: yellow;
+    }
+    .content div{
+        width: 65%;
+        height: 10%;
+        background-color: black;
+        display: block;
+        margin: 50px auto ;
+    }
+    .banners{
+        width: 100%;
+        height: 1000px;
+    }
+    .banners div{
+        width: 60%;
+        height: 15%;
+        display:block;
+        margin: 4% auto;
+    }
+    .banners div .promo h3{
+        font-size: 1.2em;
+
+    }
+    .banners div .promo p{
+        font-size: 0.7em;
+        top: 4em;
+    left: 1.8em;
+    }
+}

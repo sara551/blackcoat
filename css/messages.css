@@ -1,0 +1,59 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: rgba(253,233,233,1.00);
+}
+.profileImg{
+	border-radius: 50%;
+}
+.profileDetails img{
+	margin: 0px 0 0 50px;
+}
+.profileDetails{
+	position: relative;
+	margin-top: 100px;
+	width: 400px;
+	margin-left: 50px;
+	height: 100px;
+	border-radius: 10px;
+	padding-top: 30px;
+	background-color: white;
+}
+.profileDetails span{
+	position: absolute;
+	top: 40px;
+	left: 150px;
+	font-size: 120%;
+	text-shadow: 0.5px 1px 1px gray;
+}
+.profileDetails .email{
+	position: absolute;
+	top: 65px;
+	left: 150px;
+	font-size: 100%;
+}
+.messageBox{
+	background-color: rgba(205,205,205,1.00);
+	width: 550px;
+	border-radius: 20px;
+	margin: 40px auto;
+	position: relative;
+	height: auto;
+	overflow: visible;
+}
+.userProfile{
+	border-radius: 50%;
+	margin: 25px 15px 0px 25px;
+}
+.username{
+	position: absolute;
+	top: 38px;
+	color: rgba(0, 24, 235, 0.589);
+	font-size: 130%;
+}
+.message{
+	padding-bottom: 25px;
+	position: relative;
+	height: auto;
+	margin-left: 88px;
+}
